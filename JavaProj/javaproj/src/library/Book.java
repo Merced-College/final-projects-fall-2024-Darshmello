@@ -1,17 +1,18 @@
-package library;
+package library; // Declare the package.
+
 public class Book {
-    private String title;
-    private final String author;
-    private boolean isAvailable;
+    private String title; // Book title.
+    private final String author; // Book author.
+    private boolean isAvailable; // Availability status.
 
     public Book(String title, String author) {
         this.title = title;
         this.author = author;
-        this.isAvailable = true;
+        this.isAvailable = true; // Default to available.
     }
 
     public Book(String author) {
-        this.author = author;
+        this.author = author; // Constructor with only author.
     }
 
     public String getTitle() {
@@ -27,7 +28,7 @@ public class Book {
     }
 
     public void setAvailable(boolean available) {
-        this.isAvailable = available;
+        this.isAvailable = available; // Update availability status.
     }
 
     @Override
